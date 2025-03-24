@@ -1,0 +1,25 @@
+{
+  "playlist": [
+    {
+      "id": "965f",
+      "title": "Lose Yourself",
+      "artist": "Eminem",
+      "preview": "http://cdnt-preview.dzcdn.net/api/1/1/2/7/a/0/27a14827ff1e82c5e40e8b6a934a8637.mp3?hdnea=exp=1742842487~acl=/api/1/1/2/7/a/0/27a14827ff1e82c5e40e8b6a934a8637.mp3*~data=user_id=0,application_id=42~hmac=6e186cf09c67f2a29ea5f0c8a2f9e028c0241b541c05e86f0f0a1a015361ebff",
+      "cover": "http://cdn-images.dzcdn.net/images/cover/e2b36a9fda865cb2e9ed1476b6291a7d/250x250-000000-80-0-0.jpg"
+    },
+    {
+      "id": "6bf3",
+      "title": "God's Plan",
+      "artist": "Drake",
+      "preview": "http://cdnt-preview.dzcdn.net/api/1/1/9/5/c/0/95c243df757f8ccd17b6692e1051e2e9.mp3?hdnea=exp=1742843918~acl=/api/1/1/9/5/c/0/95c243df757f8ccd17b6692e1051e2e9.mp3*~data=user_id=0,application_id=42~hmac=0e46da3e87be6a915871acf65f7f8d8656bbc9fa56273e21ab65266f252ccf31",
+      "cover": "http://cdn-images.dzcdn.net/images/cover/b69d3bcbd130ad4cc9259de543889e30/250x250-000000-80-0-0.jpg"
+    },
+    {
+      "id": "a9ce",
+      "title": "City Boys",
+      "artist": "Burna Boy",
+      "preview": "http://cdnt-preview.dzcdn.net/api/1/1/6/d/9/0/6d9d3fb0c02b2d1df0f1042858d06ff9.mp3?hdnea=exp=1742843984~acl=/api/1/1/6/d/9/0/6d9d3fb0c02b2d1df0f1042858d06ff9.mp3*~data=user_id=0,application_id=42~hmac=d4dce6dcd693fa4f5d735f09f901f69da97065d1ef2045917317f67eb1b52af1",
+      "cover": "http://cdn-images.dzcdn.net/images/cover/a054378a08eba9deeb3642c58c29b5a0/250x250-000000-80-0-0.jpg"
+    }
+  ]
+}
