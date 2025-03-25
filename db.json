@@ -1,25 +1,354 @@
 {
-  "playlist": [
+  "songs": [
     {
-      "id": "965f",
-      "title": "Lose Yourself",
-      "artist": "Eminem",
-      "preview": "http://cdnt-preview.dzcdn.net/api/1/1/2/7/a/0/27a14827ff1e82c5e40e8b6a934a8637.mp3?hdnea=exp=1742842487~acl=/api/1/1/2/7/a/0/27a14827ff1e82c5e40e8b6a934a8637.mp3*~data=user_id=0,application_id=42~hmac=6e186cf09c67f2a29ea5f0c8a2f9e028c0241b541c05e86f0f0a1a015361ebff",
-      "cover": "http://cdn-images.dzcdn.net/images/cover/e2b36a9fda865cb2e9ed1476b6291a7d/250x250-000000-80-0-0.jpg"
+      "id": 1,
+      "name": "no air",
+      "artist": "chris brown",
+      "likes": 1200000,
+      "year": 2008
     },
     {
-      "id": "6bf3",
-      "title": "God's Plan",
-      "artist": "Drake",
-      "preview": "http://cdnt-preview.dzcdn.net/api/1/1/9/5/c/0/95c243df757f8ccd17b6692e1051e2e9.mp3?hdnea=exp=1742843918~acl=/api/1/1/9/5/c/0/95c243df757f8ccd17b6692e1051e2e9.mp3*~data=user_id=0,application_id=42~hmac=0e46da3e87be6a915871acf65f7f8d8656bbc9fa56273e21ab65266f252ccf31",
-      "cover": "http://cdn-images.dzcdn.net/images/cover/b69d3bcbd130ad4cc9259de543889e30/250x250-000000-80-0-0.jpg"
+      "id": 2,
+      "name": "gbona",
+      "artist": "burna boy",
+      "likes": 850000,
+      "year": 2018
     },
     {
-      "id": "a9ce",
-      "title": "City Boys",
-      "artist": "Burna Boy",
-      "preview": "http://cdnt-preview.dzcdn.net/api/1/1/6/d/9/0/6d9d3fb0c02b2d1df0f1042858d06ff9.mp3?hdnea=exp=1742843984~acl=/api/1/1/6/d/9/0/6d9d3fb0c02b2d1df0f1042858d06ff9.mp3*~data=user_id=0,application_id=42~hmac=d4dce6dcd693fa4f5d735f09f901f69da97065d1ef2045917317f67eb1b52af1",
-      "cover": "http://cdn-images.dzcdn.net/images/cover/a054378a08eba9deeb3642c58c29b5a0/250x250-000000-80-0-0.jpg"
+      "id": 3,
+      "name": "blinding lights",
+      "artist": "the weeknd",
+      "likes": 3300000,
+      "year": 2019
+    },
+    {
+      "id": 4,
+      "name": "essence",
+      "artist": "wizkid",
+      "likes": 2100000,
+      "year": 2020
+    },
+    {
+      "id": 5,
+      "name": "shape of you",
+      "artist": "ed sheeran",
+      "likes": 5000000,
+      "year": 2017
+    },
+    {
+      "id": 6,
+      "name": "under the influence",
+      "artist": "chris brown",
+      "likes": 1500000,
+      "year": 2022
+    },
+    {
+      "id": 7,
+      "name": "last last",
+      "artist": "burna boy",
+      "likes": 2300000,
+      "year": 2022
+    },
+    {
+      "id": 8,
+      "name": "calm down",
+      "artist": "rema",
+      "likes": 2700000,
+      "year": 2022
+    },
+    {
+      "id": 9,
+      "name": "stay",
+      "artist": "justin bieber",
+      "likes": 3200000,
+      "year": 2021
+    },
+    {
+      "id": 10,
+      "name": "go",
+      "artist": "cat burns",
+      "likes": 540000,
+      "year": 2021
+    },
+    {
+      "id": 11,
+      "name": "location",
+      "artist": "dave",
+      "likes": 870000,
+      "year": 2019
+    },
+    {
+      "id": 12,
+      "name": "ye",
+      "artist": "burna boy",
+      "likes": 1900000,
+      "year": 2018
+    },
+    {
+      "id": 13,
+      "name": "drunk in love",
+      "artist": "beyoncé",
+      "likes": 2500000,
+      "year": 2013
+    },
+    {
+      "id": 14,
+      "name": "boo'd up",
+      "artist": "ella mai",
+      "likes": 1200000,
+      "year": 2018
+    },
+    {
+      "id": 15,
+      "name": "thinking out loud",
+      "artist": "ed sheeran",
+      "likes": 3700000,
+      "year": 2014
+    },
+    {
+      "id": 16,
+      "name": "monalisa",
+      "artist": "lojay",
+      "likes": 670000,
+      "year": 2021
+    },
+    {
+      "id": 17,
+      "name": "unavailable",
+      "artist": "davido",
+      "likes": 1100000,
+      "year": 2023
+    },
+    {
+      "id": 18,
+      "name": "loyal",
+      "artist": "chris brown",
+      "likes": 1800000,
+      "year": 2014
+    },
+    {
+      "id": 19,
+      "name": "one dance",
+      "artist": "drake",
+      "likes": 4100000,
+      "year": 2016
+    },
+    {
+      "id": 20,
+      "name": "runaway",
+      "artist": "aurora",
+      "likes": 950000,
+      "year": 2015
+    },
+    {
+      "id": 21,
+      "name": "dior",
+      "artist": "pop smoke",
+      "likes": 2200000,
+      "year": 2019
+    },
+    {
+      "id": 22,
+      "name": "mood",
+      "artist": "24kGoldn",
+      "likes": 1500000,
+      "year": 2020
+    },
+    {
+      "id": 23,
+      "name": "finesse",
+      "artist": "bruno mars",
+      "likes": 2600000,
+      "year": 2018
+    },
+    {
+      "id": 24,
+      "name": "kilometre",
+      "artist": "burna boy",
+      "likes": 880000,
+      "year": 2021
+    },
+    {
+      "id": 25,
+      "name": "peru",
+      "artist": "fireboy dml",
+      "likes": 1400000,
+      "year": 2021
+    },
+    {
+      "id": 26,
+      "name": "wild thoughts",
+      "artist": "dj khaled",
+      "likes": 2700000,
+      "year": 2017
+    },
+    {
+      "id": 27,
+      "name": "wait for u",
+      "artist": "future",
+      "likes": 1800000,
+      "year": 2022
+    },
+    {
+      "id": 28,
+      "name": "love nwantiti",
+      "artist": "ckay",
+      "likes": 2900000,
+      "year": 2021
+    },
+    {
+      "id": 29,
+      "name": "come closer",
+      "artist": "wizkid",
+      "likes": 970000,
+      "year": 2017
+    },
+    {
+      "id": 30,
+      "name": "night changes",
+      "artist": "one direction",
+      "likes": 2400000,
+      "year": 2014
+    },
+    {
+      "id": 31,
+      "name": "as it was",
+      "artist": "harry styles",
+      "likes": 3100000,
+      "year": 2022
+    },
+    {
+      "id": 32,
+      "name": "flowers",
+      "artist": "miley cyrus",
+      "likes": 2000000,
+      "year": 2023
+    },
+    {
+      "id": 33,
+      "name": "peaches",
+      "artist": "justin bieber",
+      "likes": 2700000,
+      "year": 2021
+    },
+    {
+      "id": 34,
+      "name": "snooze",
+      "artist": "sza",
+      "likes": 1300000,
+      "year": 2022
+    },
+    {
+      "id": 35,
+      "name": "creep",
+      "artist": "radiohead",
+      "likes": 4600000,
+      "year": 1992
+    },
+    {
+      "id": 36,
+      "name": "city boys",
+      "artist": "burna boy",
+      "likes": 1750000,
+      "year": 2023
+    },
+    {
+      "id": 37,
+      "name": "water",
+      "artist": "tyla",
+      "likes": 1850000,
+      "year": 2023
+    },
+    {
+      "id": 38,
+      "name": "reckless",
+      "artist": "madison beer",
+      "likes": 970000,
+      "year": 2021
+    },
+    {
+      "id": 39,
+      "name": "telekinesis",
+      "artist": "travis scott",
+      "likes": 2100000,
+      "year": 2023
+    },
+    {
+      "id": 40,
+      "name": "paint the town red",
+      "artist": "doja cat",
+      "likes": 1550000,
+      "year": 2023
+    },
+    {
+      "id": 41,
+      "name": "meltdown",
+      "artist": "travis scott",
+      "likes": 1700000,
+      "year": 2023
+    },
+    {
+      "id": 42,
+      "name": "woman",
+      "artist": "doja cat",
+      "likes": 1900000,
+      "year": 2021
+    },
+    {
+      "id": 43,
+      "name": "bad habit",
+      "artist": "steve lacy",
+      "likes": 1300000,
+      "year": 2022
+    },
+    {
+      "id": 44,
+      "name": "over",
+      "artist": "rema",
+      "likes": 890000,
+      "year": 2022
+    },
+    {
+      "id": 45,
+      "name": "who told you",
+      "artist": "j hus",
+      "likes": 710000,
+      "year": 2023
+    },
+    {
+      "id": 46,
+      "name": "holiday",
+      "artist": "rema",
+      "likes": 980000,
+      "year": 2021
+    },
+    {
+      "id": 47,
+      "name": "vampire",
+      "artist": "olivia rodrigo",
+      "likes": 2100000,
+      "year": 2023
+    },
+    {
+      "id": 48,
+      "name": "ojapiano",
+      "artist": "kcee",
+      "likes": 600000,
+      "year": 2023
+    },
+    {
+      "id": 49,
+      "name": "big 7",
+      "artist": "burna boy",
+      "likes": 1200000,
+      "year": 2023
+    },
+    {
+      "id": 50,
+      "name": "greedy",
+      "artist": "tate mcrae",
+      "likes": 1400000,
+      "year": 2023
     }
   ]
 }
