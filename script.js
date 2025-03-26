@@ -1,52 +1,74 @@
-// First, I define the URL where my music data is.
-// This is coming from my JSON server running on port 3002.
-const API_URL = "http://localhost:3002/music";
+//  First, I define the API URL where my music data lives
+// This is the link to my local JSON server running on port 3002
+const API_URL = "http://localhost:3004/music";
 
-// elements from the HTML
+//  Now I grab all the elements from my HTML that I’ll need to work with later
+
 const searchInput = document.getElementById("searchInput");
 const searchBtn = document.getElementById("searchBtn");
 const resultsDiv = document.getElementById("results");
 
-// Now I use fetch() to get data from the API as soon as the page loads.
+//  Now I use fetch() to get data from the server when the page first loads
 fetch(API_URL)
-  .then(response => {
-    // When the server responds, I turn that response into real JSON
-    // So I can actually use the data inside JavaScript.
+  .then((response) => {
     return response.json();
   })
-  .then(data => {
-    // After converting to JSON, I go inside the "songs" array in the data.
-    // So I write: data.songs — that gives me the list of all songs.
+  .then((data) => {
+    //  I go inside the returned JSON and pick out the array of songs
     const songs = data.songs;
 
-    // For now, I just want to make sure the data is coming through,
-    // so I log it in the console to check if it worked.
+    //  I log the full song list just to make sure the data came through correctly
     console.log("Fetched songs:", songs);
 
-    // 🔄 I loop through every song I got from the server
-songs.forEach(song => {
-  // 🧱 I create a new card (like a box) for this song
-  const card = document.createElement("div");
+    //  Now I want to allow searching — so I listen for when the user clicks the "Search" button
+    searchBtn.addEventListener("click", () => {
+      // 🧹 First, I clear the previous search results from the page
+      // Otherwise, old results will keep stacking up
+      resultsDiv.innerHTML = "";
 
-  // 🎨 I give it the class name 'card' so it uses my CSS styling
-  card.className = "card";
+      //  I grab whatever the user typed in the search input field
+      // I also use .toLowerCase() to make it case-insensitive (so "burna" works the same as "Burna")
+      const searchTerm = searchInput.value.toLowerCase();
 
-  // 📝 I add song info inside the card using innerHTML
-  // This builds small bits of HTML using the song's data
-  card.innerHTML = `
-        <h3>${song.name}</h3>
-        <p><strong>Artist:</strong> ${song.artist}</p> 
-        <p><strong>Likes:</strong> ${song.likes.toLocaleString()}</p>
-        <p><strong>Year:</strong> ${song.year}</p>
-      `;
+      //  Now I filter the songs array — this means I’ll only keep songs that match the search
+      // .filter() checks every song to see if the name includes the word the user typed
+      const filteredSongs = songs.filter(song =>
+        song.name.toLowerCase().includes(searchTerm) ||
+        song.artist.toLowerCase().includes(searchTerm)
+      );      
 
-  // 📥 Finally, I put this card inside the main results area
-  resultsDiv.appendChild(card);
-});
+      //  Now I take the filtered songs and loop through them one by one
+      // I use forEach to create a visual card for each result
+      filteredSongs.forEach((song) => {
+        //  I create a new <div> element that will hold one song's info
+        const card = document.createElement("div");
 
+        //  I give it the "card" class so it uses the card styling in my CSS
+        card.className = "card";
+
+        //  Inside that card, I add song details using innerHTML
+        // I show: the song name, artist, number of likes, and year
+        card.innerHTML = `
+          <h3>${song.name}</h3>
+          <p><strong>Artist:</strong> ${song.artist}</p>
+          <p><strong>Likes:</strong> ${song.likes.toLocaleString()}</p>
+          <p><strong>Year:</strong> ${song.year}</p>
+        `;
+
+        // 📥 Finally, I insert that card into the results area on the webpage
+        resultsDiv.appendChild(card);
+      });
+
+      console.log("Filtered songs:", filteredSongs);
+    });
   })
-  .catch(error => {
-    // If the fetch fails (like if the server is off or the URL is wrong),
-    // I catch the error and log it in the console.
+  .catch((error) => {
+    //  If there’s a problem (like the server isn’t running), this block will catch the error
+    // I log the error in the console so I know what went wrong
     console.log("Error fetching songs:", error);
   });
+
+
+
+
+ 
